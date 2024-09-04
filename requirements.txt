@@ -1,0 +1,9 @@
+flask
+flask_sqlalchemy
+flask_security
+flask_restful
+flask_security_too
+redis
+celery
+matplotlib
+flask_caching

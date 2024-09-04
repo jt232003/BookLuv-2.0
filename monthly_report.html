@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Monthly report for Librarian</h1>
+    <h3>Feedback for Approved Books</h3>
+    <table class="table table-bordered mb-5" border="1px">
+        <thead>
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Issue Date</th>
+            <th>Feedback</th>
+            <th>User</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for book in books %}
+            <tr>
+                <td>{{ book.book.book_name }}</td>
+                <td>{{ book.book.author }}</td>
+                <td>{{ book.issue_date }}</td>
+                <td>
+                    {% for item in book.feedback %}
+                        <p>{{ item.feedback }}</p>
+                    {% endfor %}
+                </td>
+                <td>{{ book.user.email }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table><br><br>
+    <a href="http://localhost:5000">click here</a>
+</body>
+</html>

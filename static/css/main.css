@@ -1,0 +1,71 @@
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+body{
+  background-image: url('img.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.category-title {
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.book-card {
+  transition: transform 0.2s;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  color: #333;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card .card-body {
+  padding: 20px;
+}
+
+.book-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.book-card .card-text {
+  font-size: 1rem;
+}
+
+.book-card .btn {
+  /* background-color: #ffcc00; */
+  border: none;
+  color: #333;
+}
+
+.book-card .btn:hover {
+  background-color: #ffaa00;
+}
+
+.book-card input[type="date"] {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+  
